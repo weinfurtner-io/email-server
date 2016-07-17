@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="#{contact.title(${name})}">Localized Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>name:</td>
+            <td th:text="${name}">Test Name</td>
+        </tr>
+        <tr>
+            <td>email:</td>
+            <td th:text="${email}">test@email.com</td>
+        </tr>
+        <tr>
+            <td>message:</td>
+            <td th:text="${message}">Test Message</td>
+        </tr>
+    </table>
+</body>
+</html>
