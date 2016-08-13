@@ -17,5 +17,10 @@ spring:
   cloud:
     config:
       uri: http://config-server:8888
+      retry:
+        initial-interval: 6000
+        max-attempts: 10
+        max-interval: 6000
+      fail-fast: true
 
 
